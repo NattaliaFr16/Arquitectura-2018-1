@@ -17,10 +17,10 @@ begin
 
 process (a,b) is
 	begin 
-		c <= std_logic_vector(signed (a) + signed (b)); 	--donde se hiciera a + b solo se estaria sumando un bitt  
+	c <= std_logic_vector(signed (a) + signed (b)); 	--donde se hiciera a + b solo se estaria sumando un bitt  
 
 
-	end process;
+end process;
 
 end Behavioral;
 

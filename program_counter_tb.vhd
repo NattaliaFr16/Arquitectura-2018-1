@@ -17,7 +17,7 @@ ARCHITECTURE behavior OF program_counter_tb IS
  
     COMPONENT program_counter
     PORT(
-         pcadder : IN  std_logic_vector(31 downto 0);
+         pcadder : IN  std_logic_vector(31 downto 0); --data in
          rst : IN  std_logic;
          clk : IN  std_logic;
          salida : OUT  std_logic_vector(31 downto 0)

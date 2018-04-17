@@ -19,7 +19,7 @@ signal hold : std_logic_vector (31 downto 0) := x"00000000";
 
 begin
 
-process (pcadder,rst,clk,hold)						--siempre va con lo que trabajo,o sea las entradas
+process (pcadder,clk,hold,rst)						--siempre va con lo que trabajo,o sea las entradas
 	begin 
 	if ( rst = '0') then 								--si rst = 0 hace la operacion 
 		if (clk'event and clk = '1') then         -- cuando hay un evento de reloj y esta en 1
@@ -27,7 +27,7 @@ process (pcadder,rst,clk,hold)						--siempre va con lo que trabajo,o sea las en
 		end if;
 	
 	else 														--si rst = 1  
-		hold <= x"00000000";								--llena de ceros
+		hold <= "00000000000000000000000000000000";								--llena de ceros
 	end if;
 	
 	

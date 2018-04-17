@@ -55,13 +55,8 @@ BEGIN
 
    -- Stimulus process
    stim_proc: process
-   begin		
-      unrst <= '0';
-		wait for 100 ns;	
-		unrst <= '1';
-		wait for 100 ns;	
-      unrst <= '0';
-		wait for 100 ns;	
+   begin			
+		
 
       -- insert stimulus here 
 
